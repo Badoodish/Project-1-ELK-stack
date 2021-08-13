@@ -5,9 +5,9 @@ In this project, we created a virtual network with multiple VMs and containers r
 
 The files in this repository were used to configure the network depicted below.
 
-![Project 1: Azure Virtual Network](./images/diagram.png)
+![Project 1: Azure Virtual Network](./Images/diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select playbook files may be used to install only certain pieces of it, such as [Filebeat playbook](./Playbooks/filebeat-playbook.yml).
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select playbook files may be used to install only certain pieces of it, such as [Filebeat playbook](./Playbooks/filebeat-playbook).
 
 
 This document contains the following details:
@@ -83,8 +83,8 @@ We have installed the Filebeats and Metricbeats on these machines. Filebeat is a
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [elk playbook](./Playbooks/install-elk.yml) file to the ~/etc/ansible/ directory. 
-- Update the hosts file to include your elk machine. Click [here](./images/etc.ansible.hosts) to see an example.
+- Copy the [elk playbook](./Playbooks/elk-playbook) file to the ~/etc/ansible/ directory. 
+- Update the hosts file to include your elk machine. Click [here](./Images/etc.ansible.hosts) to see an example.
 - Run the playbook, and navigate to http://<ELK.VM.External.IP>:5601/app/kibana to check that the installation worked as expected.
 
 
